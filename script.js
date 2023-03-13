@@ -32,6 +32,9 @@ function updateImage() {
     .then((data) => {
         //console.log(data.url);
         document.querySelector('img').src = data.hdurl;
+
+        var div = document.getElementById("explanation");
+        div.innerHTML += data.explanation;
     })
     .catch(function(error) {
         console.log(error);

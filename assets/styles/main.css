@@ -1,3 +1,31 @@
 body {
     position: relative;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+label {
+    position:relative;
+}
+
+#explanation {
+    word-wrap:break-word;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+padding-top: 2%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+padding-bottom: 3%;
+padding-right: 2%;
