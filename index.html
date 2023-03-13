@@ -21,14 +21,9 @@
 
         <input type="date" name="image-date" min="1995-06-16" /> <!-- June 16, 1995 earliest and current date should be the max -->
 
-        <!-- Maybe figure out how to do this in the external javascript-->
-        <script>
-            var today = new Date().toISOString().split('T')[0];
-            document.getElementByName("daySelector")[0].setAttribute('min', today);
-            alert(today);
-        </script>
-
         <input type="button" onclick="updateImage()" value="Display">
+
+        <img/>
 
         <!-- API KEY = Yrf09T9fD51i7pELjCJwgXG7gf4dON6QQl3euvuN -->
         

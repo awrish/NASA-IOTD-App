@@ -25,15 +25,22 @@ function updateImage() {
 
     var queryURLDate = "https://api.nasa.gov/planetary/apod?api_key=" + apiKey + "&date=" + date;
 
-    console.log(queryURLDate);
+    //console.log(queryURLDate);
 
     fetch(queryURLDate)
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+        //console.log(data.url);
+        document.querySelector('img').src = data.hdurl;
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
 
 }
 
 function test() {
     var today = new Date().toISOString().split('T')[0];
     document.querySelector('input[type="date"]').setAttribute('max', today);
+    document.querySelector('input[type="date"').setAttribute('value', today);
 }
