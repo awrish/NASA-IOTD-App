@@ -36,12 +36,3 @@ ul {
     color:pink;
     margin-top: 2%;
 }
-
-#imagesContainer {
-    float: left;
-    width:  100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-

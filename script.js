@@ -114,7 +114,7 @@ function randomImages() {
 
 }
 
-TODO fix formatting of the image
+
 /**
  * 
  */
@@ -126,6 +126,9 @@ function randomGen() {
     .then((response) => response.json() )
     .then((data) => {
         //console.log(data[0].hdurl); //why do i have to index it here and not above?
+
+        //could replace data[0] with a variable 
+        
         document.querySelector('img').src = data[0].hdurl;
         
         // clears field before adding in the new data
@@ -135,12 +138,13 @@ function randomGen() {
 
 
         /** Not all images have copyright information attatched, those who don't are from NASA and in the public domain */
-        if(data.copyright != null) {
-            copy.innerHTML += "Copyright information: " + data.copyright;
+        if(data[0].copyright != null) {
+            copy.innerHTML += "Copyright information: " + data[0].copyright;
         } else {
             copy.innerHTML += "Copyright information: NASA";
         }
         
+        // FIX FORMATTING OF THE IMAGE DISPLAYED
         
     })
     .catch(function(error) {
