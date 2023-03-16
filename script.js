@@ -54,69 +54,8 @@ function setup() {
 }
 
 
-
 /**
- * Displays random images based on the number the user entered, set limit to make the feature faster
- * 
- * Scrapped for now as I could not figure out to how display the images in a way that was nice to look at.
- */
-function randomImages() {
-
-    var count = document.getElementById("count").value;
-    console.log(count);
-
-    if (count <= 0){
-        alert("Count must not be empty")
-        location.reload();
-    }
-
-    var queryURLRandom = "https://api.nasa.gov/planetary/apod?api_key=" + apiKey + "&count=" + count;
-
-    fetch(queryURLRandom)
-    .then((response) => response.json())
-    .then((data) => {
-
-        for (index in data) {
-
-            var img = document.createElement('img');
-
-            img.src = data[index].hdurl;
-
-            document.getElementById('storeImages').appendChild(img);
-
-
-            //create a div for image
-            //add image to the div
-            //add div to the document
-        }
-
-        /** Both loops are valid
-         * 
-        for (x in data) {
-            console.log(data[x].url);
-        }
- 
-        for (i = 0; i < data.length; i++) {
-            console.log(data[i].hdurl);
-        }
-        */
-
-        //works 
-        // console.log(data[0].hdurl);
-
-        
-        //setup the images to be displayed
-        //do it as image card 
-    })
-    .catch(function(error) {
-        console.log(error);
-    });
-
-}
-
-
-/**
- * 
+ * Generates random images for the wallpaper page. Makes use of the count feature in the Open API.
  */
 function randomGen() {
 
@@ -125,10 +64,8 @@ function randomGen() {
     fetch(queryWallpaper)
     .then((response) => response.json() )
     .then((data) => {
-        //console.log(data[0].hdurl); //why do i have to index it here and not above?
-
         //could replace data[0] with a variable 
-        
+
         document.querySelector('img').src = data[0].hdurl;
         
         // clears field before adding in the new data
@@ -143,8 +80,6 @@ function randomGen() {
         } else {
             copy.innerHTML += "Copyright information: NASA";
         }
-        
-        // FIX FORMATTING OF THE IMAGE DISPLAYED
         
     })
     .catch(function(error) {
