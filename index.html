@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Astronomy Image of the Day</title>
+
+        <link rel="stylesheet" href="/assets/styles/main.css">
+
+        <script src="/script.js" async> </script>
+
+
+    </head>
+
+    <body onload="setup();">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="randomImages.html">Random Images</a></li>
+        </ul>
+
+        <header>
+            <h1> Sample Webpage </h1>
+        </header>
+        <h2> Select a date to see NASA's astronomy picture of the day! </h2>
+        
+        
+        <label> Select a date: </label>
+
+        <input type="date" name="image-date" min="1995-06-16" /> 
+
+        <input type="button" onclick="updateImage()" value="Display">
+
+        <img/>
+
+        <div id="copyright"> </div>
+
+        <div id="explanation"></div>
+
+
+    </body>
+    
+    
+    </html>

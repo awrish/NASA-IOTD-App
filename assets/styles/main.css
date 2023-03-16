@@ -1,0 +1,38 @@
+body {
+    position: relative;
+}
+
+img {
+    margin-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+label {
+    position:relative;
+}
+
+#explanation {
+    word-wrap:break-word;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#copyright {
+    text-align: center;
+    color:pink;
+    margin-top: 2%;
+}
