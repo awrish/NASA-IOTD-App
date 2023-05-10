@@ -1,38 +1,141 @@
+/* Global styles */
 body {
-    position: relative;
-}
-
-img {
-    margin-top: 2%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-label {
-    position:relative;
-}
-
-#explanation {
-    word-wrap:break-word;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-ul {
-    list-style-type: none;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     background-color: #333;
-}
+  }
+  
+  li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #555;
+  }
+  
+  header {
+    background-color: #eee;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  input[type="date"] {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="button"] {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #explanation, #copyright {
+    margin-top: 20px;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #contentsMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #count {
+    margin: 20px 0;
+  }
+  
+  #copyright {
+    margin-top: 20px;
+  }
+  
+  #explanation {
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  #explanation h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #explanation p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #explanation a {
+    color: blue;
+  }
 
-#copyright {
-    text-align: center;
-    color:pink;
-    margin-top: 2%;
-}
+  body {
+    /* background: linear-gradient(120deg, #16222A, #3A6073, #3A2E6D); */
+    background: linear-gradient(to bottom, #16192c, #2f2f61, #4a4f96, #6267bb, #7b7ee1);
+    color: #FFFFFF;
+  }
+  
+  
+  header {
+    background-color: transparent;
+  }
+  
